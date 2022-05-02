@@ -1,0 +1,4 @@
+pyrogram
+opencv-python
+Pillow
+animeface
