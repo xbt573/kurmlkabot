@@ -4,7 +4,13 @@ from PIL import Image
 import os
 import cv2
 
-bot = Client("noanime")
+api_id = os.environ.get("API_ID")
+api_hash = os.environ.get("API_HASH")
+
+if api_id == None or api_hash == None:
+	raise ValueError("Not found api_id or/and api_hash in env.")
+
+bot = Client("noanime", api_id, api_hash)
 
 with open("num", "w") as f:
 	f.write("0")
