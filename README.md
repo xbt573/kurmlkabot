@@ -15,13 +15,8 @@ And of course, before launch don't forget install all dependencies, using comman
   pip install animeface
   pip install Pillow
 ```
-For Windows users, first you just need to run this in command line, before running main.py (skip this, because anyway this is not supposed to work)
-```bash
-  setx API_ID "you-api-id"
-  setx API_HASH "you-api-hash"
-```
 
-But as you may notice dear Windows user, your adventures are not over yet.
+But if you're Windows user, yours adventures are not over yet)
 Animeface will not work under Windows, so you need to install wsl, and no, this is not World Surf League, that's Windows Subsystem for Linux :)
 
 Open your PowerShell and type 
