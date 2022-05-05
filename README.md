@@ -9,15 +9,11 @@ To start it, replace placeholders in env.sh to your data, and launch this comman
 
 And of course, before launch don't forget install all dependencies, using commands below.
 ```bash
-  pip install pyrogram
-  pip install TgCrypto
-  pip install opencv-python
-  pip install animeface
-  pip install Pillow
+  pip install pyrogram TgCrypto opencv-python animeface Pillow
 ```
 
 But if you're Windows user, yours adventures are not over yet)
-Animeface will not work under Windows, so you need to install wsl, and no, this is not World Surf League, that's Windows Subsystem for Linux :)
+Animeface will not work under Windows, so you need to install WSL, and no, this is not World Surf League, that's Windows Subsystem for Linux :)
 
 Open your PowerShell and type 
 ```bash
@@ -30,9 +26,9 @@ After that you need to navigate to aka.ms/wsltore and download linux distro, cho
 Install Ubuntu, run it, and create your user.
 Next open cmd, and type wsl, if you did everything mentioned earlier, you will see your linux user.
 
-Now, we need to install all the dependencies, but now in linux)
+Now, we need to install all the dependencies, but in linux)
 
-But first
+But first update your packages
 
 ```bash
   sudo apt-get update
@@ -53,7 +49,7 @@ But in terminal it's should look like this:
   cd PycharmProjects/kurmlkabot
 ```
 
-Finally, navigate into env.sh file and write your api_id and hash_is, and also dont forget to write export before each statement.
+Finally, navigate into env.sh file and write your api_id and hash_id, and also dont forget to write "export" before each statement.
 It should look like this:
 ```bash
   export API_ID="your_api_id"
@@ -66,5 +62,5 @@ And now lets run our bot
   . ./env.sh; python3 main.py 
 ```
 
-If bot is successfully running, you will receive this message "Enter phone number or bot token:"
+If bot is successfully running, you will receive this message: "Enter phone number or bot token:"
 Then enter your token, and now your bot is completely working. Enjoy!
